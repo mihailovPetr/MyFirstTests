@@ -40,23 +40,4 @@ class EmailValidatorTest {
         assertFalse(EmailValidator.isValidEmail(null))
     }
 
-    @Test
-    fun emailValidator_Test1() {
-        assertFalse(EmailValidator.isValidEmail("name.com"))
-    }
-
-    @Test
-    fun emailValidator_Test2() {
-        assertFalse(EmailValidator.isValidEmail("name@com"))
-    }
-
-    @Test
-    fun emailValidator_Test3() {
-        assertFalse(EmailValidator.isValidEmail("@@.com"))
-    }
-
-    @Test
-    fun emailValidator_Test4() {
-        assertFalse(EmailValidator.isValidEmail("name@email.name@.email.com"))
-    }
 }
